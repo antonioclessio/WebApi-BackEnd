@@ -2,7 +2,7 @@
 
 ## The code here is a fragment of a project that was created to a brazillian client, so this is the reason that some comments and code are in portuguese
 
-## Of course that the sensitive data and informations was removed from this sample
+## All the sensitive data and informations was removed from this sample
 
 The idea of this sample, is a simple backend with three layers:
 
