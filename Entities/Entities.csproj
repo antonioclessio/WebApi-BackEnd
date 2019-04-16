@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC7536C7-5013-415F-A807-6952AF36046F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Entities</RootNamespace>
+    <AssemblyName>Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\LogAtividadeAttribute.cs" />
+    <Compile Include="Entity\Aplicacao\ApplicationStructureResult.cs" />
+    <Compile Include="Entity\Aplicacao\GetAplicacoesResult.cs" />
+    <Compile Include="Entity\Aplicacao\MenuByParentResult.cs" />
+    <Compile Include="Entity\Aplicacao\RetornarCockpitResult.cs" />
+    <Compile Include="Entity\BaseDetailModel.cs" />
+    <Compile Include="Entity\BaseFilterModel.cs" />
+    <Compile Include="Entity\BaseFormModel.cs" />
+    <Compile Include="Entity\BaseListModel.cs" />
+    <Compile Include="Entity\Funcionario\FuncionarioEmailDetail.cs" />
+    <Compile Include="Entity\Funcionario\FuncionarioTelefoneDetail.cs" />
+    <Compile Include="Entity\LocalizacaoGeografica\CEPAbertoResult.cs" />
+    <Compile Include="Entity\Funcionario\FuncionarioDetailResult.cs" />
+    <Compile Include="Entity\Funcionario\FuncionarioFilterQuery.cs" />
+    <Compile Include="Entity\Funcionario\FuncionarioForm.cs" />
+    <Compile Include="Entity\Funcionario\FuncionarioListResult.cs" />
+    <Compile Include="Entity\Profissao\ProfissaoAutoCompleteResult.cs" />
+    <Compile Include="Entity\Profissao\ProfissaoDetailResult.cs" />
+    <Compile Include="Entity\Profissao\ProfissaoFilterQuery.cs" />
+    <Compile Include="Entity\Profissao\ProfissaoForm.cs" />
+    <Compile Include="Entity\Profissao\ProfissaoListResult.cs" />
+    <Compile Include="Entity\Feriado\FeriadoDetailResult.cs" />
+    <Compile Include="Entity\Feriado\FeriadoFilterQuery.cs" />
+    <Compile Include="Entity\Feriado\FeriadoForm.cs" />
+    <Compile Include="Entity\Feriado\FeriadoListResult.cs" />
+    <Compile Include="Entity\LocalizacaoGeografica\LocalizacaoGeograficaResult.cs" />
+    <Compile Include="Entity\Security\AuthenticationQuery.cs" />
+    <Compile Include="Entity\Security\AuthenticationResult.cs" />
+    <Compile Include="Entity\Security\PermissaoAplicacaoIdentityModel.cs" />
+    <Compile Include="Entity\Table\Aplicacao.cs" />
+    <Compile Include="Entity\Table\Aplicacao_Permissao.cs" />
+    <Compile Include="Entity\Table\AppMainMenu.cs" />
+    <Compile Include="Entity\Table\BaseTable.cs" />
+    <Compile Include="Entity\Table\Cidade.cs" />
+    <Compile Include="Entity\Table\Feriado.cs" />
+    <Compile Include="Entity\Table\Funcionario.cs" />
+    <Compile Include="Entity\Table\Funcionario_Email.cs" />
+    <Compile Include="Entity\Table\Funcionario_Telefone.cs" />
+    <Compile Include="Entity\Table\LocalizacaoGeografica.cs" />
+    <Compile Include="Entity\Table\Profissao.cs" />
+    <Compile Include="Entity\Table\Usuario.cs" />
+    <Compile Include="Entity\Table\UsuarioGrupo.cs" />
+    <Compile Include="Entity\Table\UsuarioGrupo_Permissao.cs" />
+    <Compile Include="Entity\Table\Usuario_LogAcesso.cs" />
+    <Compile Include="Entity\Table\Usuario_LogAtividade.cs" />
+    <Compile Include="Entity\UsuarioGrupo\RetornarPorUsuarioClinicaResult.cs" />
+    <Compile Include="Entity\UsuarioGrupo\UsuarioGrupoDetailResult.cs" />
+    <Compile Include="Entity\UsuarioGrupo\UsuarioGrupoFilterQuery.cs" />
+    <Compile Include="Entity\UsuarioGrupo\UsuarioGrupoForm.cs" />
+    <Compile Include="Entity\UsuarioGrupo\UsuarioGrupoListResult.cs" />
+    <Compile Include="Entity\Usuario\AlterarSenhaModel.cs" />
+    <Compile Include="Entity\Usuario\RelatorioLogAcessoUsuario\RelatorioLogAcessoUsuarioModel.cs" />
+    <Compile Include="Entity\Usuario\RelatorioLogAcessoUsuario\RelatorioLogAcessoUsuarioResult.cs" />
+    <Compile Include="Entity\Usuario\RelatorioLogAtividadeUsuario\RelatorioLogAtividadeUsuarioModel.cs" />
+    <Compile Include="Entity\Usuario\RelatorioLogAtividadeUsuario\RelatorioLogAtividadeUsuarioResult.cs" />
+    <Compile Include="Entity\Usuario\UsuarioFullWithClinicaResult.cs" />
+    <Compile Include="Entity\Usuario\UsuarioDetailResult.cs" />
+    <Compile Include="Entity\Usuario\UsuarioFilterQuery.cs" />
+    <Compile Include="Entity\Security\UsuarioSessaoModel.cs" />
+    <Compile Include="Entity\Usuario\UsuarioForm.cs" />
+    <Compile Include="Entity\Usuario\UsuarioListResult.cs" />
+    <Compile Include="Entity\Usuario\UsuarioLogAcessoResult.cs" />
+    <Compile Include="Entity\Usuario\UsuarioLogAtividadeResult.cs" />
+    <Compile Include="Entity\Usuario\Usuario_LogAcessoFilterView.cs" />
+    <Compile Include="Enum\AplicacaoEnum.cs" />
+    <Compile Include="Enum\DefaultStatusEnum.cs" />
+    <Compile Include="Enum\EstadoCivilEnum.cs" />
+    <Compile Include="Enum\TipoFeriadoEnum.cs" />
+    <Compile Include="Enum\TipoSexoEnum.cs" />
+    <Compile Include="Enum\TipoTelefoneEnum.cs" />
+    <Compile Include="Exceptions\BusinessException.cs" />
+    <Compile Include="Helpers\EnumHelper.cs" />
+    <Compile Include="Interfaces\V1\IBaseView.cs" />
+    <Compile Include="Interfaces\V1\ITable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

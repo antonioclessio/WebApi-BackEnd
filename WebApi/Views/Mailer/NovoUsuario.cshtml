@@ -1,0 +1,61 @@
+﻿@using Entities.Entity.Usuario;
+
+@model UsuarioForm
+
+<table cellSpacing=0 cellPadding=0 width="100%" height="500px" bgColor=#17446f border=0>
+    <tbody>
+        <tr>
+            <td>
+                <table cellSpacing=0 cellPadding=10 width=680 align=center bgColor=#ffffff border=0>
+                    <tbody>
+                        <tr>
+                            <td width=40 align="left">
+                                <img src="https://www.erp.com.br/assets/logo.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2 style="font-family: Verdana; text-align:center">Olá,  @Model.Nome</h2>
+                                <h3 style="font-family: Verdana; text-align:center">Bem vindo ao ERP!</h3>
+                            </td>
+                        </tr>
+                        <br />
+                        <tr>
+                            <td>
+                                <p style="font-family: Verdana; font-size:12px; color:#454545">Seu usuário de acesso foi criado no sistema de gestão erp.</p>
+                                <p style="font-family: Verdana; font-size:12px; color:#454545">
+                                    Para acessar, digite em seu navegador o endereço https://www.erp.com.br ou <a href="https://www.erp.com.br">clique aqui</a>.
+                                </p>
+
+                                <p style="font-family: Verdana; font-size:12px; color:#454545; text-align: center; margin: 40px; border: 1px solid #ddd; padding: 15px; background-color: #f9f9f9;">
+                                    <strong>Dados de acesso</strong> <br><br>
+
+                                    <strong>Usuário: </strong> @Model.Email <br>
+                                    <strong>Senha: </strong> erp
+                                </p>
+
+                                <p style="font-family: Verdana; font-size:12px; color:#454545">
+                                    A senha informada acima é temporária e, ao fazer o primeiro acesso você será orientado a realizar a troca da senha por uma de sua preferência.
+                                </p>
+                            </td>
+                        </tr>
+                        <br />
+                        <tr>
+                            <td bgColor=#17446f>
+                                <table cellSpacing=0 cellPadding=0 width=600 align=center border=0>
+                                    <tbody>
+                                        <tr>
+                                            <td style="font-size: 10px; font-family: Arial, sans-serif; color: #ffffff; padding-bottom: 15px; text-align: center; padding-top: 0px; padding-left: 0px; line-height: 25px; padding-right: 0px">
+                                                Este é um e-mail automático, por favor, não responda.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
